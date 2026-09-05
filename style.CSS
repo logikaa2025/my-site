@@ -1,0 +1,373 @@
+body{
+  font-family: sans-serif;
+  margin: 0;
+  
+}
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #0b0d0f;
+    color: white;
+}
+
+/* HEADER */
+
+header {
+    height: 75px;
+    background: #111417;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 7%;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid #252a2e;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+.logo span {
+    color: #f0a500;
+}
+
+nav {
+    display: flex;
+    gap: 35px;
+}
+
+nav a {
+    color: #ddd;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #f0a500;
+}
+
+.play {
+    background: #f0a500;
+    border: none;
+    padding: 13px 24px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.play:hover {
+    background: #ffbd32;
+    transform: translateY(-2px);
+}
+
+/* HERO */
+
+.hero {
+    min-height: 100vh;
+    padding: 10px 10% 100px;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(5, 7, 9, 0.98),
+            rgba(5, 7, 9, 0.75),
+            rgba(5, 7, 9, 0.3)
+        ),
+        url("https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=2000&q=80");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.small-title {
+    color: #f0a500;
+    font-size: 16px;
+    letter-spacing: 5px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: clamp(60px, 9vw, 120px);
+    line-height: 0.85;
+    font-weight: 900;
+}
+
+h1 span {
+    color: #f0a500;
+}
+
+.description {
+    color: #c6c6c6;
+    margin-top: 30px;
+    font-size: 18px;
+    line-height: 1.7;
+    max-width: 550px;
+}
+
+.buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 35px;
+}
+
+.btn {
+    text-decoration: none;
+    padding: 16px 28px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.main-btn {
+    background: #f0a500;
+    color: #111;
+}
+
+.main-btn:hover {
+    background: #ffc348;
+}
+
+.second-btn {
+    border: 1px solid #777;
+    color: white;
+}
+
+.second-btn:hover {
+    border-color: #f0a500;
+    color: #f0a500;
+}
+
+/* GENERAL */
+
+section {
+    padding: 100px 10%;
+}
+
+.section-title {
+    margin-bottom: 50px;
+}
+
+.section-title p {
+    color: #f0a500;
+    font-size: 13px;
+    letter-spacing: 4px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.section-title h2 {
+    font-size: 42px;
+    font-weight: 900;
+}
+
+/* ABOUT */
+
+.about {
+    background: #101316;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.card {
+    background: #171b1f;
+    border: 1px solid #292e33;
+    padding: 35px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    border-color: #f0a500;
+}
+
+.icon {
+    font-size: 45px;
+    margin-bottom: 25px;
+}
+
+.card h3 {
+    color: #f0a500;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.card p {
+    color: #aaa;
+    line-height: 1.7;
+}
+
+/* WEAPONS */
+
+.weapons {
+    background: #0b0d0f;
+}
+
+.weapon-list {
+    max-width: 1000px;
+}
+
+.weapon {
+    display: grid;
+    grid-template-columns: 80px 1fr 100px;
+    align-items: center;
+    padding: 25px 20px;
+    border-bottom: 1px solid #292e33;
+    transition: 0.3s;
+}
+
+.weapon:hover {
+    background: #15191c;
+    padding-left: 30px;
+}
+
+.weapon-number {
+    color: #555;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.weapon h3 {
+    font-size: 23px;
+}
+
+.weapon p {
+    color: #777;
+    margin-top: 5px;
+}
+
+.weapon span {
+    color: #f0a500;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* MAPS */
+
+.maps {
+    background: #111417;
+}
+
+.map-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.map-card {
+    min-height: 220px;
+    padding: 30px;
+    background:
+        linear-gradient(
+            135deg,
+            #191e22,
+            #0e1012
+        );
+    border: 1px solid #2a2f34;
+    position: relative;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.map-card:hover {
+    transform: scale(1.03);
+    border-color: #f0a500;
+}
+
+.map-number {
+    color: #f0a500;
+    font-size: 14px;
+    margin-bottom: 60px;
+}
+
+.map-card h3 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.map-card p {
+    color: #999;
+    line-height: 1.5;
+}
+
+/* FOOTER */
+
+footer {
+    background: #080a0c;
+    border-top: 1px solid #252a2e;
+    padding: 40px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer p {
+    color: #666;
+}
+
+/* ADAPTIVE */
+
+@media (max-width: 800px) {
+
+    nav {
+        display: none;
+    }
+
+    header {
+        padding: 0 5%;
+    }
+
+    .hero {
+        padding-left: 7%;
+        padding-right: 7%;
+    }
+
+    section {
+        padding: 70px 7%;
+    }
+
+    .cards,
+    .map-container {
+        grid-template-columns: 1fr;
+    }
+
+    .weapon {
+        grid-template-columns: 50px 1fr;
+    }
+
+    .weapon span {
+        display: none;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+}
